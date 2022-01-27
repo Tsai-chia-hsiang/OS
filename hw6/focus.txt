@@ -1,0 +1,4 @@
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon6", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0

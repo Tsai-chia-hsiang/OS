@@ -1,0 +1,543 @@
+execve("/usr/bin/sensors", ["sensors"], 0x7fff58109460 /* 71 vars */) = 0
+brk(NULL)                               = 0x5591c3724000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcf95d4050) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=91393, ...}) = 0
+mmap(NULL, 91393, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd8d0a66000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsensors.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2005\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=64024, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd8d0a64000
+mmap(NULL, 66600, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd8d0a53000
+mmap(0x7fd8d0a56000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd8d0a56000
+mmap(0x7fd8d0a5d000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7fd8d0a5d000
+mmap(0x7fd8d0a62000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fd8d0a62000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd8d0861000
+mprotect(0x7fd8d0886000, 1847296, PROT_NONE) = 0
+mmap(0x7fd8d0886000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7fd8d0886000
+mmap(0x7fd8d09fe000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7fd8d09fe000
+mmap(0x7fd8d0a49000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fd8d0a49000
+mmap(0x7fd8d0a4f000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd8d0a4f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\363\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1369352, ...}) = 0
+mmap(NULL, 1368336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd8d0712000
+mmap(0x7fd8d0721000, 684032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7fd8d0721000
+mmap(0x7fd8d07c8000, 618496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb6000) = 0x7fd8d07c8000
+mmap(0x7fd8d085f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14c000) = 0x7fd8d085f000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd8d070f000
+arch_prctl(ARCH_SET_FS, 0x7fd8d070f740) = 0
+mprotect(0x7fd8d0a49000, 12288, PROT_READ) = 0
+mprotect(0x7fd8d085f000, 4096, PROT_READ) = 0
+mprotect(0x7fd8d0a62000, 4096, PROT_READ) = 0
+mprotect(0x5591c1cbb000, 4096, PROT_READ) = 0
+mprotect(0x7fd8d0aaa000, 4096, PROT_READ) = 0
+munmap(0x7fd8d0a66000, 91393)           = 0
+brk(NULL)                               = 0x5591c3724000
+brk(0x5591c3745000)                     = 0x5591c3745000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14851376, ...}) = 0
+mmap(NULL, 14851376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd8cf8e5000
+close(3)                                = 0
+statfs("/sys", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(3, /* 13 entries */, 32768)  = 400
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-3/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "i915 gmbus dpc\n", 4096)       = 15
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-10/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "nvkm-0000:01:00.0-bus-0005\n", 4096) = 27
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-1/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "Synopsys DesignWare I2C adapter\n", 4096) = 32
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-8/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "nvkm-0000:01:00.0-bus-0001\n", 4096) = 27
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-6/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "AUX A/DDI A/PHY A\n", 4096)    = 18
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-4/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "i915 gmbus dpb\n", 4096)       = 15
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-2/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "Synopsys DesignWare I2C adapter\n", 4096) = 32
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-0/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "SMBus I801 adapter at f040\n", 4096) = 27
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-9/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "nvkm-0000:01:00.0-bus-0002\n", 4096) = 27
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-7/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "AUX B/DDI B/PHY B\n", 4096)    = 18
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/class/i2c-adapter/i2c-5/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "i915 gmbus dpd\n", 4096)       = 15
+close(4)                                = 0
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(3, /* 9 entries */, 32768)   = 272
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon6", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon6", "../../devices/platform/coretemp."..., 4095) = 46
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/coretemp.0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/coretemp.0/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/coretemp.0/hwmon/hwmon6", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/coretemp.0/hwmon/hwmon6/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/platform/coretemp.0/hwmon/hwmon6/device", "../../../coretemp.0", 4095) = 19
+lstat("/sys/devices/platform/coretemp.0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "coretemp\n", 4096)             = 9
+close(4)                                = 0
+readlink("/sys/devices/platform/coretemp.0/subsystem", "../../../bus/platform", 254) = 21
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 22 entries */, 32768)  = 704
+stat("/sys/class/hwmon/hwmon6/temp3_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp2_crit_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp2_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp2_max", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp3_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp1_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp3_max", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp3_crit_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp1_crit_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp1_max", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon6/temp2_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon4", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon4", "../../devices/platform/asus-nb-w"..., 4095) = 47
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/asus-nb-wmi", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/asus-nb-wmi/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/asus-nb-wmi/hwmon/hwmon4", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/device", "../../../asus-nb-wmi", 4095) = 20
+lstat("/sys/devices/platform/asus-nb-wmi", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "asus\n", 4096)                 = 5
+close(4)                                = 0
+readlink("/sys/devices/platform/asus-nb-wmi/subsystem", "../../../bus/platform", 254) = 21
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 11 entries */, 32768)  = 328
+stat("/sys/class/hwmon/hwmon4/fan1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon4/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon2", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon2", "../../devices/LNXSYSTM:00/LNXSYB"..., 4095) = 84
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/hwmon2", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/hwmon2/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/hwmon2/device", "../../BAT0", 4095) = 10
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon2/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "BAT0\n", 4096)                 = 5
+close(4)                                = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/subsystem", "../../../../../../../class/power"..., 254) = 39
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/power_supply/BAT0/device", "../../../PNP0C0A:00", 4095) = 19
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/PNP0C0A:00/subsystem", "../../../../../bus/acpi", 254) = 23
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon2", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 8 entries */, 32768)   = 232
+stat("/sys/class/hwmon/hwmon2/in0_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon0", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon0", "../../devices/LNXSYSTM:00/LNXSYB"..., 4095) = 84
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/hwmon0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/hwmon0/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/hwmon0/device", "../../AC0", 4095) = 9
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon0/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "AC0\n", 4096)                  = 4
+close(4)                                = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/subsystem", "../../../../../../../class/power"..., 254) = 39
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/device", "../../../ACPI0003:00", 4095) = 20
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/subsystem", "../../../../../bus/acpi", 254) = 23
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon0", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 7 entries */, 32768)   = 200
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/ACPI0003:00/power_supply/AC0/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon5", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon5", "../../devices/pci0000:00/0000:00"..., 4095) = 63
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00/0000:00:1c.0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0/hwmon/hwmon5", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0/hwmon/hwmon5/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0/hwmon/hwmon5/device", "../../../0000:01:00.0", 4095) = 21
+lstat("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "nouveau\n", 4096)              = 8
+close(4)                                = 0
+readlink("/sys/devices/pci0000:00/0000:00:1c.0/0000:01:00.0/subsystem", "../../../../bus/pci", 254) = 19
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 12 entries */, 32768)  = 368
+stat("/sys/class/hwmon/hwmon5/in0_min", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon5/in0_max", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon5/in0_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon3", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon3", "../../devices/virtual/thermal/th"..., 4095) = 50
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone1", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone1/hwmon3", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone1/hwmon3/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/virtual/thermal/thermal_zone1/hwmon3/device", "../../thermal_zone1", 4095) = 19
+lstat("/sys/devices/virtual/thermal/thermal_zone1", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon3/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "pch_skylake\n", 4096)          = 12
+close(4)                                = 0
+readlink("/sys/devices/virtual/thermal/thermal_zone1/subsystem", "../../../../class/thermal", 254) = 25
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone1", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone1/device", 0x7ffcf95d3710) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon3", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 8 entries */, 32768)   = 232
+stat("/sys/class/hwmon/hwmon3/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/class", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/class/hwmon/hwmon1", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/class/hwmon/hwmon1", "../../devices/virtual/thermal/th"..., 4095) = 50
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone0/hwmon1", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone0/hwmon1/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/virtual/thermal/thermal_zone0/hwmon1/device", "../../thermal_zone0", 4095) = 19
+lstat("/sys/devices/virtual/thermal/thermal_zone0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/name", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(4, "acpitz\n", 4096)               = 7
+close(4)                                = 0
+readlink("/sys/devices/virtual/thermal/thermal_zone0/subsystem", "../../../../class/thermal", 254) = 25
+lstat("/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+lstat("/sys/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/virtual/thermal/thermal_zone0/device", {st_mode=S_IFLNK|0777, st_size=0, ...}) = 0
+readlink("/sys/devices/virtual/thermal/thermal_zone0/device", "../../../LNXSYSTM:00/LNXSYBUS:01"..., 4095) = 44
+lstat("/sys/devices/LNXSYSTM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:01", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+lstat("/sys/devices/LNXSYSTM:00/LNXSYBUS:01/LNXTHERM:00", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+readlink("/sys/devices/LNXSYSTM:00/LNXSYBUS:01/LNXTHERM:00/subsystem", "../../../../bus/acpi", 254) = 20
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+getdents64(4, /* 9 entries */, 32768)   = 264
+stat("/sys/class/hwmon/hwmon1/temp1_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+stat("/sys/class/hwmon/hwmon1/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/sensors3.conf", O_RDONLY) = 3
+ioctl(3, TCGETS, 0x7ffcf95d3d30)        = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=10593, ...}) = 0
+read(3, "# libsensors configuration file\n"..., 8192) = 8192
+read(3, "bel in2 \"+3.3V\"\n    label in3 \"+"..., 8192) = 2401
+read(3, "", 4096)                       = 0
+read(3, "", 8192)                       = 0
+ioctl(3, TCGETS, 0x7ffcf95d26e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/sensors.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+brk(0x5591c376a000)                     = 0x5591c376a000
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+brk(0x5591c3762000)                     = 0x5591c3762000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27002, ...}) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7fd8d0a76000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/ISO8859-1.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\20\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18664, ...}) = 0
+mmap(NULL, 20552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd8d0a70000
+mmap(0x7fd8d0a71000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fd8d0a71000
+mmap(0x7fd8d0a73000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd8d0a73000
+mmap(0x7fd8d0a74000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd8d0a74000
+close(3)                                = 0
+mprotect(0x7fd8d0a74000, 4096, PROT_READ) = 0
+fstat(1, {st_mode=S_IFREG|0664, st_size=28254, ...}) = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Package id 0\n", 4096)         = 13
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Core 0\n", 4096)               = 7
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Core 1\n", 4096)               = 7
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Package id 0\n", 4096)         = 13
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "50000\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_crit_alarm", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "0\n", 4096)                    = 2
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_max", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp1_crit", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Core 0\n", 4096)               = 7
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "49000\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_crit_alarm", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "0\n", 4096)                    = 2
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_max", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp2_crit", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "Core 1\n", 4096)               = 7
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "47000\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_crit_alarm", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "0\n", 4096)                    = 2
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_max", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon6/temp3_crit", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "100000\n", 4096)               = 7
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/fan1_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "cpu_fan\n", 4096)              = 8
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/fan1_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "cpu_fan\n", 4096)              = 8
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/fan1_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "2700\n", 4096)                 = 5
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon4/temp1_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "40050\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon2/in0_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon2/in0_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon2/in0_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "7600\n", 4096)                 = 5
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/in0_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "GPU core\n", 4096)             = 9
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/in0_label", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "GPU core\n", 4096)             = 9
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/in0_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, 0x5591c3726340, 4096)           = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/in0_min", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "600\n", 4096)                  = 4
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon5/in0_max", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "1200\n", 4096)                 = 5
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon3/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon3/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon3/temp1_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "40000\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/temp1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/temp1_input", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "40000\n", 4096)                = 6
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/temp1_crit", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(3, "103000\n", 4096)               = 7
+close(3)                                = 0
+write(1, "coretemp-isa-0000\nAdapter: ISA a"..., 619coretemp-isa-0000
+Adapter: ISA adapter
+Package id 0:  +50.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 0:        +49.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 1:        +47.0°C  (high = +100.0°C, crit = +100.0°C)
+
+asus-isa-0000
+Adapter: ISA adapter
+cpu_fan:     2700 RPM
+temp1:        +40.0°C  
+
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:           7.60 V  
+
+nouveau-pci-0100
+Adapter: PCI adapter
+GPU core:         N/A  (min =  +0.60 V, max =  +1.20 V)
+
+pch_skylake-virtual-0
+Adapter: Virtual device
+temp1:        +40.0°C  
+
+acpitz-acpi-0
+Adapter: ACPI interface
+temp1:        +40.0°C  (crit = +103.0°C)
+
+) = 619
+exit_group(0)                           = ?
++++ exited with 0 +++
